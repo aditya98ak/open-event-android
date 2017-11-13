@@ -26,7 +26,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -534,7 +533,6 @@ public class MainActivity extends BaseActivity implements FeedAdapter.AdapterCal
                     DateFormat date = new SimpleDateFormat("z", Locale.getDefault());
                     String localTime = date.format(currentLocalTime);
                     getSupportActionBar().setTitle(getString(R.string.menu_schedule)+" ("+ localTime +")");
-                    Log.e("setting action barTitle", localTime);
                 }
                 else{
                     getSupportActionBar().setTitle(getString(R.string.menu_schedule));
